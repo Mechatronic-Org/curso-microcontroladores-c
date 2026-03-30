@@ -1,4 +1,4 @@
-# Práctica 02: LCD 16x2 y Keypad 4x4 con STM32 NUCLEO-C031C6 en Wokwi
+# Práctica 02: LCD 16x2 y Keypad 4x4 con STM32 NUCLEO-C031C6 en Wokwi (https://wokwi.com/stm32)
 
 ## Descripción
 En esta práctica se implementa la interfaz de un **LCD 16x2 en modo 4 bits** y un **teclado matricial 4x4** usando la tarjeta **STM32 NUCLEO-C031C6** en el simulador **Wokwi**.
