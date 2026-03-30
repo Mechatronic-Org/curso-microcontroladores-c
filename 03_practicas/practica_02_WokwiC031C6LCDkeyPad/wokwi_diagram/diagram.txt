@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "author": "N/A",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "board-st-nucleo-c031c6",
+      "id": "nucleo",
+      "top": 0,
+      "left": 0,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-lcd1602",
+      "id": "lcd1",
+      "top": -170,
+      "left": 470,
+      "attrs": {
+        "pins": "full"
+      }
+    },
+    {
+      "type": "wokwi-membrane-keypad",
+      "id": "keypad1",
+      "top": 220,
+      "left": 500,
+      "attrs": {}
+    }
+  ],
+  "connections": [
+    [ "nucleo:5V.2",  "lcd1:VDD", "red",   [ "h210", "v-180", "h220" ] ],
+    [ "nucleo:GND.5", "lcd1:VSS", "black", [ "h190", "v-160", "h220" ] ],
+    [ "nucleo:GND.5", "lcd1:V0",  "black", [ "h180", "v-140", "h220" ] ],
+    [ "nucleo:GND.5", "lcd1:RW",  "black", [ "h170", "v-120", "h220" ] ],
+    [ "nucleo:5V.2",  "lcd1:A",   "red",   [ "h220", "v-60",  "h220" ] ],
+    [ "nucleo:GND.5", "lcd1:K",   "black", [ "h160", "v-40",  "h220" ] ],
+
+    [ "nucleo:PB4", "lcd1:RS", "green", [ "h140", "v-100", "h260" ] ],
+    [ "nucleo:PB5", "lcd1:E",  "green", [ "h130", "v-80",  "h260" ] ],
+    [ "nucleo:PA0", "lcd1:D4", "blue",  [ "h120", "v-60",  "h260" ] ],
+    [ "nucleo:PA1", "lcd1:D5", "blue",  [ "h110", "v-40",  "h260" ] ],
+    [ "nucleo:PA4", "lcd1:D6", "blue",  [ "h100", "v-20",  "h260" ] ],
+    [ "nucleo:PA7", "lcd1:D7", "blue",  [ "h90",  "v0",    "h260" ] ],
+
+    [ "nucleo:PA8",  "keypad1:R1", "orange", [ "h120", "v160", "h270" ] ],
+    [ "nucleo:PA9",  "keypad1:R2", "orange", [ "h130", "v180", "h270" ] ],
+    [ "nucleo:PA10", "keypad1:R3", "orange", [ "h140", "v200", "h270" ] ],
+    [ "nucleo:PA11", "keypad1:R4", "orange", [ "h150", "v220", "h270" ] ],
+
+    [ "nucleo:PB0", "keypad1:C1", "purple", [ "h160", "v240", "h270" ] ],
+    [ "nucleo:PB1", "keypad1:C2", "purple", [ "h170", "v260", "h270" ] ],
+    [ "nucleo:PB6", "keypad1:C3", "purple", [ "h180", "v280", "h270" ] ],
+    [ "nucleo:PB7", "keypad1:C4", "purple", [ "h190", "v300", "h270" ] ]
+  ],
+  "dependencies": {}
+}
