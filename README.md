@@ -3,6 +3,13 @@
 Este repositorio contiene el material del curso de programación en C
 aplicada a microcontroladores.
 
+Para acceder a este contenido realice lo siguiente:
+
+1. Abre este enlace de Binder: https://mybinder.org/
+2. Copia este enlace https://github.com/Mechatronic-Org/curso-microcontroladores-c en la sección de "GitHub repository name or URL"
+3. Una vez copiado solo da clic en Launch y esperar a que se abrá Jupyter.
+4. Una vez abierta la plataforma de Jupyter podrás explorar el siguiente contenido:
+   
 ## Contenido
 
 ### Presentaciones
