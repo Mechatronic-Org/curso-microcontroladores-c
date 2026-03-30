@@ -22,6 +22,3 @@ El notebook incluye:
 - Conexiones del circuito
 - I/O map
 - Flujo general de funcionamiento
-
-## Nota
-Reemplace `<USUARIO>` y `<REPOSITORIO>` en el enlace de Binder por la ruta real de su repositorio.
